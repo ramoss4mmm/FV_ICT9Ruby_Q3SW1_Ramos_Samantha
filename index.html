@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Q3SW1</title>
+	<style>
+       #pesostext{
+           position: absolute;
+           top: 30%;
+           left:50%;
+           transform: translate(-50%, -50%);
+       }
+       body{
+       	background-color: lightskyblue;
+       	font-size: 30px;
+       }
+	</style>
+</head>
+<body>
+	<div class="container-fluid" id="main">
+		<div class="row">
+			<center>
+			<div class="col-md-4" id="div2">
+				<img src="image-removebg-preview.png" style="width: 150px; height: 150px;">
+				<br>
+				<div id="pesostext" class="col-md-10">
+					<p id="button1"></p>
+					<p id="pesos1"></p>
+					<p id="currency"></p>
+				</div>
+			</div>
+			
+
+	<br>
+
+	<script type="text/javascript">
+
+		let button1 = "Click the buttons below to convert:";
+		let pesos1 = "1.00";
+		let currency = "Pesos to other currencies:";
+		
+
+		document.getElementById("button1").innerHTML= button1 + "<br>";
+		document.getElementById("pesos1").innerHTML= pesos1;
+		document.getElementById("currency").innerHTML= currency;
+		
+
+	</script>
+
+	<br><br><br><br><br>
+
+	<p id="show"></p>
+	<p id="show1"></p>
+	<button type="button" class="btn btn-danger" onclick="var x = 1; var y = x * 0.017; document.getElementById('show').innerHTML = 'The currency from Pesos to Euro is ' + y + '.';" style="font-size: 30px;">Euro</button>
+	<button type="button" class="btn btn-info" onclick="var x = 1; var y = x * 2.69; document.getElementById('show1').innerHTML = 'The currency from Pesos to Yen is ' + y + '.';" style="font-size: 30px;">Yen</button>
+	<br><br>
+	<a class="btn btn-outline-danger" href="index.html" style="font-size: 30px;">Refresh</a>
+			</center>
+		</div>
+	</div>
+
+</body>
+</html>
